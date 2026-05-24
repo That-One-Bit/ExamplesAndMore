@@ -1,23 +1,19 @@
 # LunaCore
-LunaCore is a work in progress script loader for Minecraft: New Nintendo 3DS Edition, featuring an easy API interface to interact with the game. You can check api_docs.md for an introduction on basic usage of the API.
+LunaCore is a work in progress script loader for Minecraft: New Nintendo 3DS Edition, featuring an easy API interface to interact with the game. You can check api_docs.md for an introduction on basic usage of the API. LunaCore is a combination of efforts made by the community, the most notable being STBrian, Cracko, and many others. To see more information, check out the contributors section below.
 
-Is the result of merging different community contributions into a single project. To know more about the contributions see the Credits section.
+This plugin runs alongside the game thanks to Luma3DS plugin loader and is built using CTRPluginFramework which provides the essentials to work together with the game. The script engine uses Lua 5.1 as scripting language, an easy language to use with a lot of possibilities. It was also chosen because of its easy implementation in embedded systems, for its powerful C API and for being lightweight.
 
-The plugin runs alongside the game thanks to Luma3DS plugin loader and is built using CTRPluginFramework which provides the essentials to work together with the game. The script engine uses Lua 5.1 as scripting language, an easy language to use with a lot of possibilities. It was also chosen because of its easy implementation in embedded systems, for its powerful C API and for being lightweight.
+This repository contains example mods seperated into folders for easy searching, some being used for learning purposes and others for in-game use. All scripts/mods are made by me, but are able to be freely edited and modified. Thanks to STBrian, Cracko298, Wyndchime, and RaiRai for the motivation to make these examples, and for figuring out how to make this possible.
 
 ## How to install
-Download the latest LunaCore.3gx file from the releases section and move the file to the folder "/luma/plugins/\<TitleId>/" of your sdcard.
+### A. All-In-One
+Download the latest `.zip` file from the releases page, and extract the `Minecraft 3ds` folder to the root of your SD card. The root is the highest folder of the SD card, and will be the default directory for most file managers. Every script/mod will be available ingame, and will be able to be toggled freely unless stated otherwise.Make sure to use the latest version of Luma3DS (Or any of its forks matching the latest version) and that the Plugin Loader is enabled in the Rosalina Menu to ensure maximum compatibility.
 
-Make sure to use the latest version of Luma3DS and that the Plugin Loader is enabled in the Rosalina Menu.
+### B. Individual Script(s)/Mod(s)
+Download the individual scripts/mods from the filetree, and locate the root folder of your SD card. The root is the highest folder of the SD card, and will be the default directory for most file managers. If not already existing, make a folder titled `Minecraft 3ds` on the root, along with a `scripts` and `mods` folder inside the `Minecraft 3ds` folder. The script(s)/mod(s) will be avaiilable ingame, and will be able to be toggled freely unless stated otherwise. Make sure to use the latest version of Luma3DS (Or any of its forks matching the latest version) and that the Plugin Loader is enabled in the Rosalina Menu to ensure maximum compatibility.
 
-| Region | Title ID |
-| --- | --- |
-| USA | 00040000001B8700 |
-| EU | 000400000017CA00 |
-| JP | 000400000017FD00 |
-
-## Credits
-LunaCore wouldn't be possible without the contributions made to the Minecraft: New Nintendo 3DS Edition community and homebrew libraries. Credits to the authors and sources that are part of LunaCore are shown below.
+## Credits and Contributions
+LunaCore wouldn't be possible without the contributions made to the Minecraft: New Nintendo 3DS Edition community and homebrew libraries. Credits to the authors and sources that are part of LunaCore are shown below. The examples featured here wouldn't be made unless these people did the work they did.
 
 | Components | Module | Thanks to |
 | --- | --- | --- | 
@@ -39,3 +35,4 @@ LunaCore wouldn't be possible without the contributions made to the Minecraft: N
 - [FsLib](https://github.com/J-D-K/FsLib) - Used for file handlers
 - [libffi](https://github.com/libffi/libffi) - Used as interface to define c functions calls from Core API
 - Lua - Scripting language (5.1)
+- [LunaCore](https://github.com/STBrian/Lunacore)
