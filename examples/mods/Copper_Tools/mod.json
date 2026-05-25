@@ -1,4 +1,4 @@
 {
-    'title=Copper Toolset'
-    'description=This example mod expands onto the craftable copper mod by adding a toolset along with it! Checks for the SPEARZ mod, and adds the copper spear too.'
+    "name=Copper Toolset"
+    "description=This example mod expands onto the craftable copper mod by adding a toolset along with it! Checks for the SPEARZ mod, and adds the copper spear too."
 }
